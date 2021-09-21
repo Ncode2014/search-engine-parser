@@ -1,1 +1,1 @@
-blessed==1.18.1
+blessed==1.19.0
