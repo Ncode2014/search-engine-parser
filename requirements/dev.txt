@@ -2,7 +2,7 @@
 blessed==1.19.1
 m2r==0.2.1
 parameterized==0.8.1
-pylint==2.13.9
+pylint==2.14.0
 pytest==7.1.2
 sphinx==4.5.0
 sphinx-rtd-theme==1.0.0
