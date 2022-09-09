@@ -1,7 +1,7 @@
 import re
 import setuptools
 
-REQUIRED_PYTHON = (3, 5)
+REQUIRED_PYTHON = (3, 7)
 
 # Load requirements
 REQUIREMENTS = 'requirements/main.txt'
