@@ -90,8 +90,11 @@ class CacheHandler:
             with open(cache_path, 'rb') as stream:
                 return pickle.load(stream), True
         get_vars = { 'url':url, 'headers':headers }
+        cookies = {
+            'CONSENT': 'YES+',
+        }
 
-        async with aiohttp.ClientSession() as session:
+        async with aiohttp.ClientSession(cookies=cookies) as session:
             async with session.get(**get_vars) as resp:
                 html = await resp.text()
                 with open(cache_path, 'wb') as stream:
